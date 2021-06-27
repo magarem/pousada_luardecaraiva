@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Full Width Pics - Start Bootstrap Template</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="/css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#!"><%=data.logo%></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    !<!--ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#!">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">Entre contato</a></li>
+                    </ul-->
+                </div>
+            </div>
+        </nav>
+        <!-- Header - set the background image for the header in the line below-->
+        <header class="py-5 bg-image-full" 
+            style="background-image: url('/img/topo.jpg')">
+            <div class="text-center my-5" style="height: 250px;">
+                <!-- <img class="img-fluid rounded-circle mb-4" src="https://dummyimage.com/150x150/6c757d/dee2e6.jpg" alt="..." />
+                <h1 class="text-white fs-3 fw-bolder">Full Width Pics</h1>
+                <p class="text-white-50 mb-0">Landing Page Template</p> -->
+            </div>
+        </header>
+        <!-- Content section-->
+        <section class="py-5">
+            <div class="container my-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <%-quemsomos%>
+                        <!-- <p class="lead">A single, lightweight helper class allows you to add engaging, full width background images to sections of your page.</p>
+                        <p class="mb-0">The universe is almost 14 billion years old, and, wow! Life had no problem starting here on Earth! I think it would be inexcusably egocentric of us to suggest that we're alone in the universe.</p> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Image element - set the background image for the header in the line below-->
+        <div class="py-5 bg-image-full" style="background-image: url('https://source.unsplash.com/4ulffa6qoKA/1200x800')">
+            <!-- Put anything you want here! The spacer below with inline CSS is just for demo purposes!-->
+            <div style="height: 20rem"></div>
+        </div>
+        <!-- Content section-->
+        <section class="py-1">
+            <div class="container my-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        
+                        <div class="container">
+
+                            <!-- Page Heading -->
+                            <h1 class="my-4">Andamento das obras</h1>
+                          
+                            <div class="row">
+
+                              <% data.album.forEach(function(item, i) {%> 
+                                <div class="col-lg-4 mb-4">
+                                  <div class="card h-100">
+                                    <img class="card-img-top" src="<%=item.img%>" alt=""></a>
+                                    <div class="card-body">
+                                      <h4 class="card-title">
+                                          <%=item.title%>
+                                      </h4>
+                                      <p class="card-text">
+                                          <%=item.txt%>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              <% }) %>
+                              <!-- <div class="col-lg-4 mb-4">
+                                <div class="card h-100">
+                                  <img class="card-img-top" src="/img/andamento_obra/158403055_1835102369988388_4115506982203570913_n.jpg" alt="">
+                                  <div class="card-body">
+                                    <h4 class="card-title">
+                                      
+                                        Exterior da pousada
+                                     
+                                    </h4>
+                                    <p class="card-text">
+                                        Exterior da pousada sendo desenvolvido durante o mês de Março
+                                    </p>
+                                  </div>
+                                </div>
+                              </div> -->
+
+
+                              
+                            </div>
+                            <!-- /.row -->
+                          
+                           
+                          
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Luar de Caraíva 2021</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
+
